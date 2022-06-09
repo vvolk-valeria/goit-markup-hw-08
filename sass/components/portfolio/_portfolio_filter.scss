@@ -1,0 +1,51 @@
+/* ********************************************************************* 
+*************** Portfolio ******************** 
+********************************************************************** */
+
+// Кнопки фильтра 
+
+.portfolio {
+    padding: 94px 0;
+}
+
+.filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.filter__btn {
+    padding: 6px 22px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    color: $titlt-color;
+    background-color: $bg-color;
+    border-radius: 4px;
+    border: none;
+
+    transition: background-color $time $cubic,
+        color $time $cubic,
+        box-shadow $time $cubic;
+
+        &:hover,
+        &:focus {
+        color: $white-color;
+        background-color: $accent-color;
+        box-shadow: $filter-shadow;
+        }
+}
+
+// .filter__btn:hover,
+// .filter__btn:focus {
+//     color: $white-color;
+//     background-color: $accent-color;
+//     box-shadow: $filter-shadow;
+// }
+
+.filter__item:not(:last-child) {
+    margin-right: 8px;
+}

@@ -1,0 +1,132 @@
+/* ********************************************************************* 
+*************** Футер ******************** 
+********************************************************************** */
+
+.logo--white {
+    color: $white-color;
+}
+
+address {
+    font-style: normal;
+}
+
+.address__contact {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1.7;
+    color: $adress-color;
+
+    transition: color $time $cubic;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+// .address__contact:hover,
+// .address__contact:focus {
+//     color: $accent-color;
+// }
+
+.footer--text-color {
+    color: $white-color;
+}
+
+.footer-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.address-list__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer {
+    background-color: $second-bg-color;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer__logo {
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.footer__container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer__block:not(:last-child) {
+    margin-right: 70px;
+}
+
+.footer__block:last-child {
+    margin-left: auto;
+}
+
+.subscription__btn {
+    padding: 10px 0;
+    padding-left: 29px;
+    padding-right: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscription__email {
+    margin-left: 10px;
+    margin: 0;
+    width: 358px;
+    height: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    margin-right: 12px;
+    border-radius: 4px;
+    background-color: transparent;
+    border: 1px solid $border-input-color;
+    cursor: pointer;
+
+    color: $adress-color;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    transition: border-color $time $cubic;
+
+    &:hover,
+    &:focus {
+        border-color: $accent-color;
+        outline-color: $accent-color;
+    }
+}
+// .subscription__email:hover,
+// .subscription__email:focus {
+//     border-color: $accent-color;
+//     outline-style: $accent-color;
+// }
+
+.subscription__email::placeholder {
+    color: $adress-color;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+}
+
+.subscription__email:not(:placeholder-shown) {
+    background-color: transparent;
+}
+
+.subscription {
+    display: flex;
+}
+
+.subscription__icon {
+    fill: $white-color;
+}
+

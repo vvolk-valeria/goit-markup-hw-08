@@ -1,0 +1,40 @@
+//* font family 
+    $main-font: 'Roboto', sans-serif;
+    $second-font: 'Raleway', sans-serif;
+//* text colors 
+    $text-color: #757575;
+    $titlt-color: #212121;
+    $adress-color: rgba(255, 255, 255, 0.6);
+    $logo-dark-color: #000000;
+    $white-color: #FFFFFF;
+    $icon-color: #AFB1B8;
+    $placeholder-color: rgba(117, 117, 117, 0.5);
+//* background colors 
+    $main-bg-color: #FFFFFF;
+    $second-bg-color: #2F303A;
+    $bg-color: #F5F4FA;
+    $bg-hero-color: #C4C4C4;
+    $accent-color: #2196F3;
+    $second-accent-color: #188CE8;
+    $overlay-bg-color: rgba(32, 148, 243, 0.902);
+    $socials-bg-color: rgba(255, 255, 255, 0.1);
+    $backdrop-bg-color: rgba(0, 0, 0, 0.2);
+//* border colors 
+    $border-color: #EEEEEE;
+    $border-header-color: #ECECEC;
+    $border-close-color: rgba(0, 0, 0, 0.1);
+    $border-input-color: rgba(255, 255, 255, 0.3);
+    $border-modal-color: rgba(33, 33, 33, 0.2);
+//* shadows 
+    $team-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    $filter-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    $portfolio-card-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+// Для анимации 
+        $time: 250ms;
+        $cubic: cubic-bezier(0.4, 0, 0.2, 1);

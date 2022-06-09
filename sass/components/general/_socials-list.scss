@@ -1,0 +1,55 @@
+/* ******************** Соц. сети ******************** */
+
+.socials {
+    display: flex;
+}
+
+.socials__item {
+    margin-right: 10px;
+    width: 44px;
+    height: 44px;
+
+    &:last-child {
+        margin-right: 0px;
+    }
+}
+
+// .socials__item:last-child {
+//     margin-right: 0px;
+// }
+
+.socials__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: $socials-bg-color;
+    border-radius: 50%;
+
+    transition: background-color $time $cubic;
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+    }
+}
+
+// .socials__link:hover,
+// .socials__link:focus {
+//     background-color: $accent-color;
+// }
+
+.socials__icon {
+    fill: $icon-color;
+    transition: fill $time $cubic;
+}
+
+.socials__link:hover .socials__icon,
+.socials__link:focus .socials__icon {
+    fill: $main-bg-color;
+}
+
+.footer__icon {
+    fill: $main-bg-color;
+}
