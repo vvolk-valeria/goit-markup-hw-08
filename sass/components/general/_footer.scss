@@ -24,11 +24,6 @@ address {
     }
 }
 
-// .address__contact:hover,
-// .address__contact:focus {
-//     color: $accent-color;
-// }
-
 .footer--text-color {
     color: $white-color;
 }
@@ -43,7 +38,7 @@ address {
 }
 
 .address-list__item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
 }
 
 .footer {
@@ -52,42 +47,63 @@ address {
     padding-bottom: 60px;
 }
 
+@media screen and (max-width: 1199px) {
+    .footer {
+        text-align: center;
+    }
+}
+
 .footer__logo {
     padding: 0;
     margin-bottom: 20px;
 }
 
-.footer__container {
+@media screen and (min-width: 768px) {
+  .footer__container {
     display: flex;
     align-items: baseline;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer__container {
+        align-items: baseline;
+        flex-wrap: nowrap;
+    }
+
+    .footer__block:last-child {
+            margin-left: auto;
+        }
+}   
 
 .footer__block:not(:last-child) {
-    margin-right: 70px;
-}
+    margin-bottom: 60px;
 
-.footer__block:last-child {
-    margin-left: auto;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+        margin-right: 70px;
+        }
 }
 
 .subscription__btn {
     padding: 10px 0;
     padding-left: 29px;
     padding-right: 28px;
+    
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .subscription__email {
-    margin-left: 10px;
-    margin: 0;
+    
     width: 358px;
     height: 50px;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 16px;
-    margin-right: 12px;
     border-radius: 4px;
     background-color: transparent;
     border: 1px solid $border-input-color;
@@ -104,12 +120,15 @@ address {
         border-color: $accent-color;
         outline-color: $accent-color;
     }
+
+    margin: 0;
+    margin-bottom: 20px;
+
+ @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    margin-right: 12px;
+ }   
 }
-// .subscription__email:hover,
-// .subscription__email:focus {
-//     border-color: $accent-color;
-//     outline-style: $accent-color;
-// }
 
 .subscription__email::placeholder {
     color: $adress-color;
@@ -124,9 +143,21 @@ address {
 
 .subscription {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+       align-items: baseline;
+        }
 }
 
 .subscription__icon {
     fill: $white-color;
+    margin-left: 10px;
+}
+
+.socials {
+  justify-content: center;
 }
 

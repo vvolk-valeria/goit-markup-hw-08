@@ -1,7 +1,14 @@
 
 /* ------------ Чем мы занимаемся ----------- */
+
+
 .services {
     padding-bottom: 94px;
+    display: none;
+    
+    @media screen and (min-width: 1200px) {
+        display: block;
+    }
 }
 
 .services-list {
@@ -16,10 +23,6 @@
         margin-right: 30px;
     }
 }
-
-// .services-list__item:not(:last-child) {
-//     margin-right: 30px;
-// }
 
 .services-list__title {
     position: absolute;

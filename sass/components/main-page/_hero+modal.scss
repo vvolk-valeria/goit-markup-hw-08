@@ -53,11 +53,6 @@
     }
 }
 
-// .btn:hover,
-// .btn:focus {
-//     background-color: $second-accent-color;
-// }
-
 .title {
     font-weight: 700;
     font-size: 36px;
@@ -134,11 +129,6 @@
     }
 }
 
-// .btn-close:hover,
-// .btn-close:focus {
-//     outline-color: $accent-color;
-// }
-
 .close-icon {
     fill: $logo-dark-color;
 
@@ -148,12 +138,6 @@
         transition: fill $time $cubic;
     }
 }
-
-// .btn-close:hover .close-icon,
-// .btn-close:focus .close-icon {
-//     fill: $accent-color;
-//     transition: fill $time $cubic;
-// }
 
 .form {
     text-align: left;
@@ -175,10 +159,6 @@
     display: block;
 }
 
-// .form__group {
-//     display: block;
-// }
-
 .form__icon {
     display: inline-block;
     position: absolute;
@@ -193,11 +173,6 @@
         fill: $accent-color;
     }
 }
-
-// .form__group:hover .form__icon,
-// .form__group:focus-within .form__icon {
-//     fill: $accent-color;
-// }
 
 .form__field {
     display: inline-block;
@@ -222,12 +197,6 @@
         outline-color: $accent-color;
     }
 }
-
-// .form__group:hover .form__field,
-// .form__group:focus-within .form__field {
-//     border-color: $accent-color;
-//     outline-color: $accent-color;
-// }
 
 .form__textarea {
     resize: none;

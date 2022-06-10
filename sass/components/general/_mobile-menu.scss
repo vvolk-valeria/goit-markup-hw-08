@@ -1,0 +1,129 @@
+// /* ********************************************************************* 
+// *************** Мобильное меню ******************** 
+// ********************************************************************** */
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 48px 40px;    
+    background-color: $main-bg-color;
+    z-index: 999;
+
+    transform: translateX(100%);
+    transition: color $time $cubic;
+}
+
+.menu-container.is-open {
+    transform: translateX(0);
+}
+    
+@media screen and (max-width: 768px) {
+.menu {
+    display: none;
+}
+}
+
+.menu-toggle__close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+.menu-toggle {
+        min-height: 40px;
+        min-width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin: 0;
+        padding: 0;
+        fill: $titlt-color;
+        cursor: pointer;
+        border: none;
+        outline: transparent;
+    }
+
+    @media (min-width: 768px) {
+        .menu-toggle {
+            display: none;
+        }
+}
+
+.menu-nav-list__item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.menu-socials {
+display: flex;
+justify-content: space-between;
+}
+
+.menu-socials__link {
+font-weight: 500;
+font-size: 18px;
+line-height: 1.22;
+letter-spacing: 0.02em;
+color: $accent-color;
+cursor: pointer;
+}
+
+.menu-nav-list__link {
+    display: block;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: $titlt-color;
+
+    transition: color $time $cubic;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.menu__link--accent {
+    color: $accent-color;
+}
+
+.menu-contacts {
+    margin-top: auto;
+    margin-bottom: 64px;
+}
+
+.menu-contact__item:not(:last-child) {
+margin-bottom: 32px;
+}
+
+.menu-contact__link {
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    fill: currentColor;
+    cursor: pointer;
+
+    transition: color $time $cubic;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.menu-contact__mail {
+font-size: 24px;
+color: $text-color;
+}
+
+.menu-contact__tel {
+    font-size: 34px;
+    color: $accent-color;
+}
+

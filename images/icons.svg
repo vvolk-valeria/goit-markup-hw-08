@@ -122,5 +122,33 @@
                 <path
                     d="M1.95703 4.75166L1.88825 4.68604L1.81923 4.75141L0.93123 5.59258L0.854858 5.66492L0.930974 5.73753L4.42671 9.07236L4.49574 9.1382L4.56476 9.07236L12.069 1.91352L12.1449 1.84116L12.069 1.76881L11.1873 0.927644L11.1183 0.861826L11.0493 0.927611L4.49577 7.17353L1.95703 4.75166Z" />
             </symbol>
+            <symbol id="icon-close-menu" viewBox="0 0 40 40">
+                <path <path
+                    d="M29.6667 12.88L27.7867 11L20.3333 18.4533L12.88 11L11 12.88L18.4533 20.3333L11 27.7867L12.88 29.6667L20.3333 22.2133L27.7867 29.6667L29.6667 27.7867L22.2133 20.3333L29.6667 12.88Z "
+                    fill="#212121" />
+            </symbol>
+            <symbol id="icon-menu" viewBox="0 0 40 40">
+                <path d="M32 0 0 18l10.227 3.788L26 7 14.002 23.186l.01.004-.012-.004V32l5.735-6.691L27 28l5-28z" />
+            </symbol>
+
+
         </defs>
     </svg>
+    <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden"
+        xmlns="http://www.w3.org/2000/svg">
+        <defs>
+
+        </defs>
+    </svg>
+
+
+    <svg width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+            d="M29.667 12.88 27.787 11l-7.454 7.453L12.88 11 11 12.88l7.453 7.453L11 27.787l1.88 1.88 7.453-7.454 7.454 7.454 1.88-1.88-7.454-7.454 7.454-7.453Z"
+            fill="#212121" />
+
+
+        <svg width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M8 14.667V12h24v2.667H8Zm0 6.666h24v-2.666H8v2.666ZM8 28h24v-2.667H8V28Z" fill="#000" />
+        </svg>
