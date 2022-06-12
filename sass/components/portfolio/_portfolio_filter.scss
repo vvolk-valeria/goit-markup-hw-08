@@ -5,13 +5,37 @@
 // Кнопки фильтра 
 
 .portfolio {
-    padding: 94px 0;
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        @media screen and (min-width: 1200px) {
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
 }
+
+
 
 .filter {
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+
+@media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+}
+}
+
+.filter__item {
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+            margin-bottom: 30px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 50px;
+        }
 }
 
 .filter__btn {
@@ -39,13 +63,25 @@
         }
 }
 
-// .filter__btn:hover,
-// .filter__btn:focus {
-//     color: $white-color;
-//     background-color: $accent-color;
-//     box-shadow: $filter-shadow;
-// }
-
 .filter__item:not(:last-child) {
     margin-right: 8px;
 }
+
+
+
+
+
+
+
+// @media screen and (max-width: 767px) {
+//     .filter__item:not(:last-child) {
+//         margin-bottom: 30px;
+//     }
+// }
+
+// @media screen and (min-width: 1200px) {
+
+//     .filter__item:not(:last-child) {
+//         margin-right: 30px;
+//     }
+// }

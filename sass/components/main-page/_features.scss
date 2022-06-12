@@ -2,8 +2,13 @@
 
 .features {
     margin: 0;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+    @media screen and (min-width: 1200px) {
+            padding-top: 94px;
+            padding-bottom: 94px;
+    }
 }
 
 .feature__tumb {
@@ -30,18 +35,68 @@
     margin: 0;
     margin-bottom: 10px;
     color: $titlt-color;
+
+    @media screen and (max-width: 767px) {
+            text-align: center;
+        }
 }
 
 .feature {
-    display: flex;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+    }
 }
 
-.feature__item:not(:last-child) {
-    margin-right: 30px;
+.feature__item {
+    max-width: 450px;
+    
+        @media screen and (min-width: 768px) {
+            max-width: 354px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            max-width: 270px;
+        }
+}
+
+
+@media screen and (max-width: 767px) {
+    .feature__item:not(:last-child) {
+        margin-bottom: 30px;            
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .feature__item:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .feature__item:not(:nth-last-child(-n + 2)) {
+                margin-bottom: 30px;
+        }
+}
+
+@media screen and (min-width: 768px) {     
+    .feature__item:not(:nth-last-child(2n+1)) {
+        margin-right: 30px;
+        }
+}
+
+@media screen and (min-width: 1200px) {
+    .feature.feature__item {
+        margin-bottom: 0;
+    }
 }
 
 .feature__text {
     font-size: 14px;
-    line-height: 1.7;
-    width: 270px;
+    line-height: 1.71;
+
 }
