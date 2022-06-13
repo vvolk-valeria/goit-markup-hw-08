@@ -117,8 +117,8 @@
     display: flex;
     align-items: center;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.1;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.02em;
     color: $text-color;
     fill: currentColor;
@@ -129,6 +129,11 @@
     &:focus {
             color: $accent-color;
             fill: currentColor;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            font-size: 14px;
+            line-height: 1.14;
         }
 }
 
@@ -151,6 +156,33 @@
     margin-right: 10px;
     align-items: baseline;
 }
+
+@media screen and (min-width: 768px) {
+    .contact__icon--mail {
+            width: 14px;
+            height: 10px;
+        }
+        .contact__icon--tel {
+            width: 10px;
+            height: 14px;
+        }
+}
+
+@media screen and (min-width: 1200px) {
+    .contact__icon--mail {
+        width:16px; 
+        height:12px;
+    }      
+    .contact__icon--tel {
+        width: 10px;
+        height: 16px;
+    }
+}
+
+
+
+
+
 
 .menu__btn {
     position: absolute;

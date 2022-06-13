@@ -14,15 +14,14 @@
         }
 }
 
-
-
 .filter {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     flex-wrap: wrap;
 
 @media screen and (min-width: 768px) {
     flex-wrap: nowrap;
+    justify-content: center;
 }
 }
 
@@ -67,21 +66,3 @@
     margin-right: 8px;
 }
 
-
-
-
-
-
-
-// @media screen and (max-width: 767px) {
-//     .filter__item:not(:last-child) {
-//         margin-bottom: 30px;
-//     }
-// }
-
-// @media screen and (min-width: 1200px) {
-
-//     .filter__item:not(:last-child) {
-//         margin-right: 30px;
-//     }
-// }
