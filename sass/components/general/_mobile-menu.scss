@@ -51,6 +51,11 @@
         background-color: transparent;
     }
 
+        &:hover,
+        &:focus {
+            fill: $accent-color;
+        }
+
     @media (min-width: 768px) {
         .menu-toggle {
             display: none;
@@ -81,7 +86,6 @@ justify-content: space-between;
     position: relative;
     
 }
-
 
 .menu-socials__item::after {
 content:" ";
