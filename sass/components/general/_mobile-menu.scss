@@ -49,12 +49,13 @@
         border: none;
         outline: transparent;
         background-color: transparent;
-    }
+        transition: fill $time $cubic;
 
         &:hover,
         &:focus {
             fill: $accent-color;
-        }
+        }        
+    }
 
     @media (min-width: 768px) {
         .menu-toggle {
@@ -65,9 +66,8 @@
 .menu__icon {
 fill: $logo-dark-color;
 
-
-&:hover,
-&:focus {
+.menu-toggle &:hover,
+.menu-toggle &:focus {
 fill: $accent-color;
 }
 }
