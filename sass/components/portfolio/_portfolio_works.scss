@@ -14,7 +14,6 @@
 }
 
 .work__item {
-
     max-width: 450px;
 
             @media screen and (min-width: 768px) {
@@ -24,9 +23,6 @@
             @media screen and (min-width: 1200px) {
                     max-width: 370px;
                 }
-
-
-                        outline: 1px solid red;
 }
 
 @media screen and (max-width: 767px) {
