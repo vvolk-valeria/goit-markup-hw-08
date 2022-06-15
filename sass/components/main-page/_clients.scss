@@ -18,17 +18,28 @@
 
     @media screen and (min-width: 1200px) {
         flex-wrap: nowrap;
-        }
+    }
+
+    @media screen and (max-width: 479px) {
+        flex-direction: column;
+    }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479px) {
+    .clients-list__item {
+        margin-left: auto;
+        margin-right: auto;  
+        margin-bottom: 30px; 
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
     .clients-list__item:not(:nth-last-child(-n + 2)) {
             margin-bottom: 30px;
-        }
+    }
 
     .clients-list__item:not(:nth-last-child(2n+1)) {
         margin-right: 30px;
-
     }
 }
 
