@@ -25,11 +25,15 @@
                     max-width: 370px;
                 }
 
-            @media screen and (max-width: 768px) {
-                    margin:0;
-                }
+
+                        outline: 1px solid red;
 }
 
+@media screen and (max-width: 767px) {
+        .work__item:not(:last-child) {
+            margin-bottom: 30px;
+        }
+}
 
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
