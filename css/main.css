@@ -436,8 +436,10 @@ img {
   }
 }
 
-.contact__item--position:not(:last-child) {
-  margin-bottom: 10px;
+@media screen and (max-width: 1199px) {
+  .contact__item--position:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
