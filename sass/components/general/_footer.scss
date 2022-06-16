@@ -161,3 +161,36 @@ address {
   justify-content: center;
 }
 
+
+.scroll-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 3vh;
+    right: 3vw;
+    background-color: $main-bg-color;
+    cursor: pointer;
+    border-color: $titlt-color;
+
+        &:hover,
+        &:focus {
+            fill: $accent-color;
+            border-color: $accent-color;
+        }
+       &:hover .scroll-icon,
+       &:focus .scroll-icon {
+                fill: $accent-color;
+}
+}
+
+.scroll-icon {
+    width: 100%;
+    fill: $titlt-color;
+}
+
+@media screen and (min-width: 768px) {
+    .scroll-btn {
+        display: none;
+    }
+}
