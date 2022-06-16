@@ -121,6 +121,11 @@
             transform: translateY(0);
         }
 
+        @media screen and (max-width: 376px) {
+            padding-top: 20px;
+            overflow-y: scroll;
+        }
+
         @media screen and (max-width: 767px) {
             display: flex;
             align-items: center;
@@ -141,6 +146,7 @@
     font-size: 18px;
     line-height: 1.55;
     color: $white-color;
+    width: 100%;
 }
 
 
