@@ -15,7 +15,7 @@
 <body>
 
 <!-- Шапка -->
-<header class="page-header">
+<header class="page-header" id="top">
     <div class="container page-header__container">
         <button class="menu-toggle menu-toggle__open js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
         <svg class="menu__icon" width="40" height="40">
@@ -467,10 +467,10 @@
                 </svg>
             </button>
     </div>
-<button class="scroll-btn">
-    <a href="#" onclick="return up()"><svg class="scroll-icon" width="24" height="24">
+<button class="scroll-btn" type="button">
+    <a class="scroll_link" href="#top"><svg class="scroll-icon" width="24" height="24">
         <use href="./images/icons.svg#icon-arrow-up2"></use>
-    </svg></a>
+    </svg>
 </button>
 
 
@@ -478,7 +478,7 @@
     integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
     crossorigin="anonymous"></script>
 <script defer src="js/mobile-menu.js"></script>
-<script src="./js/scroll.js"></script>
+
 <script src="./js/modal.js"></script>
 </body>
 </html>

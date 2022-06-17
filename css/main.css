@@ -1610,6 +1610,10 @@ address {
   fill: #2196F3;
 }
 
+.scroll_link {
+  width: 100%;
+}
+
 .scroll-icon {
   width: 100%;
   fill: #212121;
