@@ -47,7 +47,7 @@ address {
     padding-bottom: 60px;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.98px) {
     .footer {
         text-align: center;
     }
@@ -99,7 +99,7 @@ address {
 
 .subscription__email {
     
-    width: 358px;
+
     height: 50px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -123,11 +123,18 @@ address {
 
     margin: 0;
     margin-bottom: 20px;
+    width: 100%;
+    max-width: 450px;
 
- @media screen and (min-width: 1200px) {
+@media screen and (min-width: 480px) {
+    width: 450px;
+}
+
+@media screen and (min-width: 1200px) {
     margin-bottom: 0;
     margin-right: 12px;
- }   
+    width: 358px;
+}   
 }
 
 .subscription__email::placeholder {
@@ -148,7 +155,7 @@ address {
 
     @media screen and (min-width: 1200px) {
         flex-direction: row;
-       align-items: baseline;
+        align-items: baseline;
         }
 }
 
@@ -167,8 +174,8 @@ address {
     height: 40px;
     border-radius: 50%;
     position: fixed;
-    bottom: 3vh;
-    right: 3vw;
+    bottom: 4vh;
+    right: 5vw;
     background-color: $main-bg-color;
     cursor: pointer;
     border-color: $titlt-color;
