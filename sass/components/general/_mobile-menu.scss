@@ -15,7 +15,7 @@
     z-index: 100;
 
     transform: translateX(100%);
-    transition: color $time $cubic;
+    transition: transform $time $cubic;
 }
 
 .menu-container.is-open {
@@ -115,10 +115,15 @@ line-height: 1.22;
 letter-spacing: 0.02em;
 color: $accent-color;
 cursor: pointer;
+
+    &:hover,
+    &:focus {
+        color: $second-accent-color;
+    }
 }
 
 .menu-nav-list__link {
-    display: block;
+    // display: block;
     font-weight: 500;
     font-size: 36px;
     line-height: 1.17;
@@ -169,6 +174,11 @@ margin-bottom: 32px;
 .menu-contact__tel {
     font-size: 30px;
     color: $accent-color;
+
+        &:hover,
+        &:focus {
+            color: $second-accent-color;
+        }
 }
 
 @media screen and (min-width: 480px) {

@@ -28,8 +28,6 @@
 .clients-list__item {
     width: 170px;
     height: 92px;
-    border: 1px solid $icon-color;
-    border-radius: 4px;
 }
 
 @media screen and (max-width: 479.98px) {
@@ -77,6 +75,8 @@
     width: 100%;
     height: 100%;
     padding: 32px, 16px;
+    border: 1px solid $icon-color;
+    border-radius: 4px;
     fill: $icon-color;
 
     transition: fill $time $cubic,
