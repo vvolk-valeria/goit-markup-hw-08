@@ -17,6 +17,10 @@ body {
     background-color: $main-bg-color;
 }
 
+body.modal-open {
+    overflow: hidden;
+}
+
 .container {
     margin: 0 auto;
     padding: 0 15px;

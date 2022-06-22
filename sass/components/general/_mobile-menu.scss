@@ -16,17 +16,12 @@
 
     transform: translateX(100%);
     transition: transform $time $cubic;
+
+    overflow-y: auto;
 }
 
 .menu-container.is-open {
     transform: translateX(0);
-
-}
-    
-@media screen and (max-width: 767.98px) {
-.menu {
-    display: none;
-}
 }
 
 .menu-toggle__close {

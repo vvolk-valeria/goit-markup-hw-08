@@ -26,8 +26,9 @@
 }
 
 .clients-list__item {
-    width: 170px;
+    max-width: 170px;
     height: 92px;
+    width: 100%;
 }
 
 @media screen and (max-width: 479.98px) {
